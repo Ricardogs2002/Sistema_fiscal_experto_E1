@@ -20,14 +20,14 @@ def relative_to_assets(path: str) -> Path:
 
 window = Tk()
 
-window.geometry("360x404")
+window.geometry("360x640")
 window.configure(bg = "#FFFFFF")
 
 
 canvas = Canvas(
     window,
     bg = "#FFFFFF",
-    height = 404,
+    height = 640,
     width = 360,
     bd = 0,
     highlightthickness = 0,
@@ -46,29 +46,41 @@ button_1 = Button(
 )
 button_1.place(
     x=62.0,
-    y=319.0,
+    y=291.0,
     width=236.0,
     height=58.0
 )
 
-entry_image_1 = PhotoImage(
-    file=relative_to_assets("entry_1.png"))
-entry_bg_1 = canvas.create_image(
-    179.5,
-    152.0,
-    image=entry_image_1
+button_image_2 = PhotoImage(
+    file=relative_to_assets("button_2.png"))
+button_2 = Button(
+    image=button_image_2,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_2 clicked"),
+    relief="flat"
 )
-entry_1 = Text(
-    bd=0,
-    bg="#FFFFFF",
-    fg="#000716",
-    highlightthickness=0
+button_2.place(
+    x=61.0,
+    y=152.0,
+    width=236.0,
+    height=58.0
 )
-entry_1.place(
-    x=22.0,
-    y=24.0,
-    width=315.0,
-    height=254.0
+
+button_image_3 = PhotoImage(
+    file=relative_to_assets("button_3.png"))
+button_3 = Button(
+    image=button_image_3,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_3 clicked"),
+    relief="flat"
+)
+button_3.place(
+    x=62.0,
+    y=531.0,
+    width=236.0,
+    height=58.0
 )
 window.resizable(False, False)
 window.mainloop()
