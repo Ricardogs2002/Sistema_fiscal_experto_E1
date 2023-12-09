@@ -5,13 +5,16 @@ import java.awt.event.*;
 import java.awt.Font;
 import java.awt.*;
 import java.io.*;
-class Presentacion extends JPanel implements ActionListener{
+
+public class Presentacion extends JPanel implements ActionListener{
     Font fuente=new Font("Algerian",Font.BOLD,20);
     Font fuente1=new Font("Algerian",Font.PLAIN,20);
     Font fuente2=new Font("Arial",Font.PLAIN,18);
+    Fisico_Moral Ventana3;
     public JTextArea resumen;
     public JButton botonS,botonA;
     public JScrollPane scroll;
+    public JScrollPane Paneles;
     public Presentacion(){
         setLayout(null);
         setBackground(new Color(200,242,144));
@@ -29,9 +32,13 @@ class Presentacion extends JPanel implements ActionListener{
         botonA = new JButton("Atras");
         botonA.setBounds(105,480,150,30);
         botonA.setFont(fuente2);
-        add(scroll);
+        Paneles = new JScrollPane();
+        Paneles.setBounds(0,0,800,600);
+        Paneles.setVisible(false);
+        add(scroll);    
         add(botonS);
         add(botonA);
+        add(Paneles);
         scroll.setOpaque(false);
         scroll.getViewport().setOpaque(false);
         scroll.setBorder(null);
@@ -42,6 +49,8 @@ class Presentacion extends JPanel implements ActionListener{
         resumen.setOpaque(false);
         botonS.addActionListener(this);
         botonA.addActionListener(this);
+
+        Ventana3 = new Fisico_Moral();
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
     //Leer txt
         String Ins = "Definiciones.txt";
@@ -56,18 +65,32 @@ class Presentacion extends JPanel implements ActionListener{
     }
     public void actionPerformed(ActionEvent accion){
         if (accion.getSource() == botonS){
+            Paneles.setVisible(true);
+            Ventana3 = new Fisico_Moral();
+            ver3(Ventana3);
         }
         if (accion.getSource() == botonA){
         }
     }
 
+private void ver3(Fisico_Moral coso){
+        Paneles.setViewportView(coso);
+        Play();
+    }
+
+
+    private void Play(){
+        scroll.setVisible(false);
+        botonS.setVisible(false);
+        botonA.setVisible(false);
+    }
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||    
     //Cambio de fondo
     private Image backgroundImage;
 
     protected void paintComponent(Graphics g) {
         try {
-            backgroundImage = ImageIO.read(new File("Bovedae.jpg"));  // Imagen a cambiar
+            backgroundImage = ImageIO.read(new File("Biblio.png"));  // Imagen a cambiar
         } catch (Exception e) {
             e.printStackTrace();
         }

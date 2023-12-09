@@ -83,7 +83,6 @@ public class Main_SE extends JFrame implements ActionListener {
         }
         if (accion.getSource() == botonJ){
             Paneles.setVisible(true);
-            r = random.nextInt(5) + 1;
             Ventana1 = new Presentacion();
             ver1(Ventana1);
         }

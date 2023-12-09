@@ -1,4 +1,4 @@
-// RIGS 7F 20310388
+ // RIGS 7F 20310388
 import javax.swing.*;
 import javax.imageio.ImageIO;
 import java.awt.event.*;
@@ -10,6 +10,7 @@ class Reglas extends JPanel{
 	Font fuente1=new Font("Algerian",Font.PLAIN,20);
 	Font fuente2=new Font("Arial",Font.PLAIN,18);
 	public JTextArea reglamento;
+	public JScrollPane Paneles;
 	public JScrollPane scroll;
 	public Reglas(){
         setLayout(null);
