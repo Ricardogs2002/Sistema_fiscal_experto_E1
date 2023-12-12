@@ -1,1 +1,3 @@
-Sup
+¡Hola! Este programa está hecho para informarte acerca de los diferentes regímenes fiscales que hay en México.
+
+Para seleccionar una opción que te muestra en la pantalla, simplemente haz click, y te mostrará una nueva ventana con nuevas opciones a escoger.

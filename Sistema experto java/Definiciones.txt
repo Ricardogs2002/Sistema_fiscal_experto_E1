@@ -1,3 +1,39 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra consequat augue, id pretium nibh malesuada eu. Nunc vel blandit dolor. Fusce eget quam vel eros tincidunt imperdiet. Vestibulum a elit ac lectus dapibus ultricies eget sed nulla. Praesent ut dui quis lorem viverra pellentesque at quis ante. Vestibulum orci mauris, suscipit bibendum lacus vel, fermentum aliquam mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin tempor ullamcorper dolor sed elementum. Ut id justo tempor, posuere nisi id, aliquet augue. Nunc ut enim et dui bibendum posuere sit amet non elit. Nam condimentum viverra nibh, ac commodo orci ultrices at. Nullam feugiat ligula quis ligula placerat placerat. Suspendisse congue et velit a tincidunt.
+Personas físicas.
+Una persona física es un individuo, es decir, una persona en su capacidad individual.
 
-Vestibulum ut sagittis quam. Vivamus vestibulum ut ipsum id tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dictum eu nibh id blandit. Quisque suscipit orci quis sagittis tincidunt. Mauris pretium, mi ac facilisis mollis, odio augue facilisis tellus, vel dictum eros erat ut arcu. Cras at scelerisque mauris, sed lacinia risus. Ut vel aliquam nisi. Ut volutpat tortor nunc, ut elementum ligula consequat eu. Nullam tempor leo sed facilisis egestas. Quisque dignissim, massa vitae rhoncus lacinia, metus justo varius leo, nec venenatis nunc nisl eget orci. In a quam enim. Pellentesque tempor euismod lectus at eleifend. Proin quis tellus nec mi accumsan lobortis ac ut libero. Quisque euismod, enim non rhoncus ultricies, leo sapien lobortis nibh, et auctor nulla eros eu ipsum. In hac habitasse platea dictumst.
+Características: 
+Las personas físicas son contribuyentes individuales que realizan actividades económicas, ya sea como asalariados, profesionales independientes, comerciantes, o en cualquier otra forma de actividad económica.
+- No requiere registro formal en constitución legal
+- Su RFC consta de 13 caracteres (homoclave).
+- Su responsabilidad es personal e ilimitada.
+- Su declaración de impuestos es anual.
+- Hay un solo titular.
+- Tienen características exclusivas de una persona, poseen un cuerpo material y estado civil.
+- Pueden contraer obligaciones a partir de que adquieren la mayoría de edad o cuando comienzan a trabajar formalmente.
+- Pueden ser mexicanas y además contar con otra nacionalidad.
+
+Obligaciones fiscales de las personas físicas.
+- Comprobante de inscripción en el Registro Federal de Contribuyentes y deberás actualizar tu información personal regularmente.
+- Remitir facturas donde se coloque el sello digital de los Servicios de Administración Tributaria.
+- Realizar la declaración de ingresos mensuales, bimestrales, anuales e informativas, el tiempo dependerá del régimen al que pertenezcas.
+- Anexar otros requisitos que correspondan a la clase de régimen de personas físicas al que se inscribió.
+
+Personas morales.
+Una persona moral es una entidad jurídica o corporativa que existe de manera independiente de sus accionistas o miembros individuales.
+
+Características: 
+Las personas morales son estructuras legales como empresas, sociedades anónimas, sociedades de responsabilidad limitada, asociaciones, fundaciones, entre otras. Estas entidades están formadas por individuos pero actúan como una entidad única ante la ley.
+- Requieren registro ante el sat.
+- Consta de 12 caracteres (sin homoclave).
+- Limitada al patrimonio de la entidad.
+- Declaraciones periódicas y anuales.
+- Múltiples socios o accionistas.
+- Tienen obligaciones fiscales desde que son creadas.
+- Sólo pueden ser mexicanas cuando fueron creadas bajo las leyes mexicanas y cuando su domicilio se encuentra dentro del país.
+
+Obligaciones fiscales de las personas morales.
+- Inscribirse en el Registro Federal de Contribuyentes.
+- Solicitar la firma electrónica certificada, por parte de un notario público.
+- Llevar la contabilidad electrónica tal como lo establece el Código Fiscal de la Federación, desde que se inicien las operaciones.
+- Declarar con fines de información para el caso de los regímenes no lucrativos y en cuanto a los generales, realizar los pagos provisionales de impuestos junto con la presentación de la declaración anual.
+- Anexar otros documentos que requieren los Servicios de Administración Tributaria y que son diferentes para cada tipo de régimen.

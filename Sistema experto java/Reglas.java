@@ -26,7 +26,9 @@ class Reglas extends JPanel{
 		scroll.getViewport().setOpaque(false);
 		scroll.setBorder(null);
 		scroll.setViewportBorder(null);
-		scroll.setBounds(20,20,760,560);
+		scroll.setBounds(20,20,300,355);
+		scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        	scroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		reglamento.setOpaque(false);
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	//Leer txt
@@ -46,7 +48,7 @@ class Reglas extends JPanel{
 
     protected void paintComponent(Graphics g) {
     	try {
-            backgroundImage = ImageIO.read(new File("Bovedae.jpg"));  // Imagen a cambiar
+            backgroundImage = ImageIO.read(new File("Biblio.png"));  // Imagen a cambiar
         } catch (Exception e) {
             e.printStackTrace();
         }
