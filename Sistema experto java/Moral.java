@@ -8,49 +8,48 @@ class Moral extends JPanel implements ActionListener{
     Font fuente=new Font("Algerian",Font.BOLD,20);
     Font fuente1=new Font("Algerian",Font.PLAIN,20);
     Font fuente2=new Font("Arial",Font.PLAIN,18);
-    public JButton botonM1,botonM2,botonM3,botonA;//agregar tantos botones Fx como sea necesario
+    public JButton botonF1, botonA;//agregar tantos botones Fx como sea necesario
     public JScrollPane Paneles;
+    private JComboBox<String> opciones;
+    public JLabel titulo;
     public Moral(){
-        setLayout(null);
+         setLayout(null);
         setBackground(new Color(200,242,144));
-        botonM1= new JButton("Moral 1");
-        botonM1.setBounds(105,100,150,30);
-        botonM1.setFont(fuente2);
-        botonM2 = new JButton("Moral 2");
-        botonM2.setBounds(105,150,150,30);
-        botonM2.setFont(fuente2);
-        botonM3 = new JButton("Moral 3");
-        botonM3.setBounds(105,200,150,30);
-        botonM3.setFont(fuente2);
+        opciones = new JComboBox<>();
+        opciones.setBounds(80,150,200,30);
+        opciones.addItem("Selecciona una opcion");
+        opciones.addItem("Regimen General");
+        opciones.addItem("Fines no lucrativos");
+        
+        botonF1 = new JButton("Siguiente");
+        botonF1.setBounds(105,300,150,30);
+        botonF1.setFont(fuente2);
+
+                
+        titulo = new JLabel("Persona Moral");
+        titulo.setBounds(125,20,450,50); //x, y, ancho, alto. Dentro del frame
+        titulo.setFont(fuente2);
+        titulo.setForeground(Color.WHITE);
+
         botonA = new JButton("Atras");
         botonA.setBounds(105,480,150,30);
         botonA.setFont(fuente2);
         Paneles = new JScrollPane();
         Paneles.setBounds(0,0,800,600);
         Paneles.setVisible(false);
-        add(botonM1);
-        add(botonM2);
-        add(botonM3);
+        
         add(botonA);
+        add(botonF1);
         add(Paneles);
-        botonM1.addActionListener(this);
-        botonM2.addActionListener(this);
-        botonM3.addActionListener(this);
+        add(opciones);
+        add(titulo);
         botonA.addActionListener(this);
 
 
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
     }
     public void actionPerformed(ActionEvent accion){
-        if (accion.getSource() == botonM1){
-            Paneles.setVisible(true);
-        }
-        if (accion.getSource() == botonM2){
-        }
-        if (accion.getSource() == botonM3){
-        }
-        if (accion.getSource() == botonA){
-        }
+        
     }
 
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||    
