@@ -17,8 +17,9 @@ class Fisico extends JPanel implements ActionListener, ItemListener{
 
         setLayout(null);
         setBackground(new Color(200,242,144));
-        opciones = new JComboBox();
-        opciones.setBounds(105,150,150,30);
+        opciones = new JComboBox<>();
+        opciones.setBounds(80,150,200,30);
+        opciones.addItem("Selecciona una opcion");
         opciones.addItem("Incorporación fiscal");
         opciones.addItem("Actividades empresariales");
         opciones.addItem("Arrendamiento de inmuebles");
