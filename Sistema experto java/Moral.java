@@ -38,19 +38,33 @@ class Moral extends JPanel implements ActionListener{
         Paneles.setBounds(0,0,800,600);
         Paneles.setVisible(false);
         
+        
         add(botonA);
         add(botonF1);
         add(Paneles);
         add(opciones);
         add(titulo);
         botonA.addActionListener(this);
+        botonF1.addActionListener(this);
 
 
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
     }
     public void actionPerformed(ActionEvent accion){
-        
-    }
+    
+    		if (accion.getSource() == botonF1){
+            String OPC = (String)opciones.getSelectedItem();
+            if (OPC == "Regimen General"){
+                JOptionPane.showMessageDialog(null, "Bajo este esquema tributan todas las personas morales que tengan actividad empresarial y con fines de lucro. Algunos ejemplos son las sociedades mercantiles, \nasociaciones civiles, sociedades cooperativas de producción, instituciones de servicios financieros, almacenes generales, arrendadoras financieras, sociedades \nde inversión de capitales, organismos descentralizados o fideicomisos con actividad empresarial..");
+            }
+            if (OPC == "Fines no lucrativos"){
+                JOptionPane.showMessageDialog(null,"En este régimen se encuentran todas las personas morales constituidas con fines no lucrativos. Algunos ejemplos son las sociedades de inversión, las administradoras \nde fondos para el retiro (Afores), los sindicatos, las cámaras sectoriales, asociaciones civiles o instituciones de beneficencia." );
+            }
+            if (OPC == "Selecciona una opcion"){
+                JOptionPane.showMessageDialog(null, "Seleccione alguna opcion","", JOptionPane.WARNING_MESSAGE);
+            }
+    	}
+   }
 
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||    
     //Cambio de fondo
